@@ -4,6 +4,6 @@ There were two parts to the assignment. The first involved counting files larger
 # [Click for details](https://archive.is/899pF)
 Final Mark: 97
 
-Usage for count_large: `./count_large size [permissions]`
+Usage for count_large: `ls -l | ./count_large size [permissions]`
 
 Usage for validate_sin: `./validate_sin sin`

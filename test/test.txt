@@ -1,0 +1,555 @@
+iaasdsaldjaslkdlaksdj
+asdjk;ajsd;ksa
+;djaksjdkasjlfkjalskdj
+asf
+kjlkLast login: Thu Feb  1 19:36:36 on ttys000
+Tash-hads-MacBook-Pro:lab4 tash-had$ cdc
+Tash-hads-MacBook-Pro:C-Projects tash-had$ ls
+CSC209-PCRS	lab3		saqifmoh	test
+Tash-hads-MacBook-Pro:C-Projects tash-had$ cd saqifmoh/
+Tash-hads-MacBook-Pro:saqifmoh tash-had$ ls
+a1		lab1		lab3		markus-hooks
+lab0		lab2		lab4
+Tash-hads-MacBook-Pro:saqifmoh tash-had$ cd a1/
+Tash-hads-MacBook-Pro:a1 tash-had$ ls
+Makefile	count_large.c	handout.test	validate_sin.c
+count_large	count_large.o	sin_helpers.c
+Tash-hads-MacBook-Pro:a1 tash-had$ make count_large
+gcc -Wall -Werror -std=c99 -c count_large.c
+gcc -Wall -Werror -std=c99 -o count_large count_large.o
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l | ./count_large 1000
+3
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l | ./count_large 1000 rwx-------
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+1
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l | ./count_large 1000
+3
+Tash-hads-MacBook-Pro:a1 tash-had$ make count_large
+gcc -Wall -Werror -std=c99 -c count_large.c
+gcc -Wall -Werror -std=c99 -o count_large count_large.o
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l | ./count_large 1000 rwx-------
+THIS: rwx-------, r, w
+
+THIS: rwx-------, r, w
+
+THIS: rwx-------, r, w
+
+THIS: rwx-------, r, w
+
+THIS: rwx-------, r, w
+
+THIS: rwx-------, r, w
+
+THIS: rwx-------, r, w
+
+1
+Tash-hads-MacBook-Pro:a1 tash-had$ make count_large
+gcc -Wall -Werror -std=c99 -c count_large.c
+gcc -Wall -Werror -std=c99 -o count_large count_large.o
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l | ./count_large 1000 rwx-------
+THIS: rwx-------, r, w
+
+CHECKING: wCHECKING: xTHIS: rwx-------, r, w
+
+CHECKING: wCHECKING: xCHECKING: -CHECKING: -CHECKING: -CHECKING: -CHECKING: -CHECKING: -THIS: rwx-------, r, w
+
+CHECKING: wCHECKING: xTHIS: rwx-------, r, w
+
+CHECKING: wCHECKING: xTHIS: rwx-------, r, w
+
+CHECKING: wCHECKING: xTHIS: rwx-------, r, w
+
+CHECKING: wCHECKING: xTHIS: rwx-------, r, w
+
+CHECKING: wCHECKING: x1
+Tash-hads-MacBook-Pro:a1 tash-had$ make count_large
+gcc -Wall -Werror -std=c99 -c count_large.c
+gcc -Wall -Werror -std=c99 -o count_large count_large.o
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l | ./count_large 1000 rwx-------
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+CHECKING: x
+CHECKING: -
+CHECKING: -
+CHECKING: -
+CHECKING: -
+CHECKING: -
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+1
+Tash-hads-MacBook-Pro:a1 tash-had$ make count_large
+gcc -Wall -Werror -std=c99 -c count_large.c
+gcc -Wall -Werror -std=c99 -o count_large count_large.o
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l | ./count_large 1000 rwx-------
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+CHECKING: x
+CHECKING: -
+CHECKING: -
+CHECKING: -
+CHECKING: -
+CHECKING: -
+CHECKING: -
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+CHECKING: x
+1
+Tash-hads-MacBook-Pro:a1 tash-had$ make count_large
+gcc -Wall -Werror -std=c99 -c count_large.c
+count_large.c:7:39: error: data argument not used by format string
+      [-Werror,-Wformat-extra-args]
+    printf("THIS: %s\n", req_permits, req_permits[0], req_permits[1]);
+           ~~~~~~~~~~~~               ^
+1 error generated.
+make: *** [count_large.o] Error 1
+Tash-hads-MacBook-Pro:a1 tash-had$ make count_large
+gcc -Wall -Werror -std=c99 -c count_large.c
+gcc -Wall -Werror -std=c99 -o count_large count_large.o
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l | ./count_large 1000 rwx-------
+THIS: rwx-------
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------
+CHECKING: r
+CHECKING: w
+CHECKING: x
+CHECKING: -
+CHECKING: -
+CHECKING: -
+CHECKING: -
+CHECKING: -
+CHECKING: -
+THIS: rwx-------
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------
+CHECKING: r
+CHECKING: w
+CHECKING: x
+1
+Tash-hads-MacBook-Pro:a1 tash-had$ make count_large
+gcc -Wall -Werror -std=c99 -c count_large.c
+gcc -Wall -Werror -std=c99 -o count_large count_large.o
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l | ./count_large 1000 rwx-------
+1
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l
+total 72
+-rw-r--r--@ 1 tash-had  staff   732 19 Jan 00:58 Makefile
+-rwxr-xr-x  1 tash-had  staff  8800  1 Feb 20:21 count_large
+-rw-r--r--  1 tash-had  staff  2498  1 Feb 20:21 count_large.c
+-rw-r--r--  1 tash-had  staff  1780  1 Feb 20:21 count_large.o
+-rw-r--r--  1 tash-had  staff   219 24 Jan 01:35 handout.test
+-rw-r--r--@ 1 tash-had  staff   984 25 Jan 01:11 sin_helpers.c
+-rw-r--r--  1 tash-had  staff   800 25 Jan 03:31 validate_sin.c
+Tash-hads-MacBook-Pro:a1 tash-had$ git add count_large.c
+Tash-hads-MacBook-Pro:a1 tash-had$ ls
+Makefile	count_large.c	handout.test	validate_sin.c
+count_large	count_large.o	sin_helpers.c
+Tash-hads-MacBook-Pro:a1 tash-had$ mkdir test
+Tash-hads-MacBook-Pro:a1 tash-had$ cd test
+Tash-hads-MacBook-Pro:test tash-had$ touch test.txt
+Tash-hads-MacBook-Pro:test tash-had$ vim test.txt
+
+iaasdsaldjaslkdlaksdj
+asdjk;ajsd;ksa
+;djaksjdkasjlfkjalskdj
+asf
+kjlk
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+-- INSERT --
+Last login: Thu Feb  1 19:36:36 on ttys000
+Tash-hads-MacBook-Pro:lab4 tash-had$ cdc
+Tash-hads-MacBook-Pro:C-Projects tash-had$ ls
+CSC209-PCRS	lab3		saqifmoh	test
+Tash-hads-MacBook-Pro:C-Projects tash-had$ cd saqifmoh/
+Tash-hads-MacBook-Pro:saqifmoh tash-had$ ls
+a1		lab1		lab3		markus-hooks
+lab0		lab2		lab4
+Tash-hads-MacBook-Pro:saqifmoh tash-had$ cd a1/
+Tash-hads-MacBook-Pro:a1 tash-had$ ls
+Makefile	count_large.c	handout.test	validate_sin.c
+count_large	count_large.o	sin_helpers.c
+Tash-hads-MacBook-Pro:a1 tash-had$ make count_large
+gcc -Wall -Werror -std=c99 -c count_large.c
+gcc -Wall -Werror -std=c99 -o count_large count_large.o
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l | ./count_large 1000
+3
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l | ./count_large 1000 rwx-------
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+THIS: rwx-------
+
+1
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l | ./count_large 1000
+3
+Tash-hads-MacBook-Pro:a1 tash-had$ make count_large
+gcc -Wall -Werror -std=c99 -c count_large.c
+gcc -Wall -Werror -std=c99 -o count_large count_large.o
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l | ./count_large 1000 rwx-------
+THIS: rwx-------, r, w
+
+THIS: rwx-------, r, w
+
+THIS: rwx-------, r, w
+
+THIS: rwx-------, r, w
+
+THIS: rwx-------, r, w
+
+THIS: rwx-------, r, w
+
+THIS: rwx-------, r, w
+
+1
+Tash-hads-MacBook-Pro:a1 tash-had$ make count_large
+gcc -Wall -Werror -std=c99 -c count_large.c
+gcc -Wall -Werror -std=c99 -o count_large count_large.o
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l | ./count_large 1000 rwx-------
+THIS: rwx-------, r, w
+
+CHECKING: wCHECKING: xTHIS: rwx-------, r, w
+
+CHECKING: wCHECKING: xCHECKING: -CHECKING: -CHECKING: -CHECKING: -CHECKING: -CHECKING: -THIS: rwx-------, r, w
+
+CHECKING: wCHECKING: xTHIS: rwx-------, r, w
+
+CHECKING: wCHECKING: xTHIS: rwx-------, r, w
+
+CHECKING: wCHECKING: xTHIS: rwx-------, r, w
+
+CHECKING: wCHECKING: xTHIS: rwx-------, r, w
+
+CHECKING: wCHECKING: x1
+Tash-hads-MacBook-Pro:a1 tash-had$ make count_large
+gcc -Wall -Werror -std=c99 -c count_large.c
+gcc -Wall -Werror -std=c99 -o count_large count_large.o
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l | ./count_large 1000 rwx-------
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+CHECKING: x
+CHECKING: -
+CHECKING: -
+CHECKING: -
+CHECKING: -
+CHECKING: -
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+1
+Tash-hads-MacBook-Pro:a1 tash-had$ make count_large
+gcc -Wall -Werror -std=c99 -c count_large.c
+gcc -Wall -Werror -std=c99 -o count_large count_large.o
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l | ./count_large 1000 rwx-------
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+CHECKING: x
+CHECKING: -
+CHECKING: -
+CHECKING: -
+CHECKING: -
+CHECKING: -
+CHECKING: -
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------, r, w
+
+CHECKING: r
+CHECKING: w
+CHECKING: x
+1
+Tash-hads-MacBook-Pro:a1 tash-had$ make count_large
+gcc -Wall -Werror -std=c99 -c count_large.c
+count_large.c:7:39: error: data argument not used by format string
+      [-Werror,-Wformat-extra-args]
+    printf("THIS: %s\n", req_permits, req_permits[0], req_permits[1]);
+           ~~~~~~~~~~~~               ^
+1 error generated.
+make: *** [count_large.o] Error 1
+Tash-hads-MacBook-Pro:a1 tash-had$ make count_large
+gcc -Wall -Werror -std=c99 -c count_large.c
+gcc -Wall -Werror -std=c99 -o count_large count_large.o
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l | ./count_large 1000 rwx-------
+THIS: rwx-------
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------
+CHECKING: r
+CHECKING: w
+CHECKING: x
+CHECKING: -
+CHECKING: -
+CHECKING: -
+CHECKING: -
+CHECKING: -
+CHECKING: -
+THIS: rwx-------
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------
+CHECKING: r
+CHECKING: w
+CHECKING: x
+THIS: rwx-------
+CHECKING: r
+CHECKING: w
+CHECKING: x
+1
+Tash-hads-MacBook-Pro:a1 tash-had$ make count_large
+gcc -Wall -Werror -std=c99 -c count_large.c
+gcc -Wall -Werror -std=c99 -o count_large count_large.o
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l | ./count_large 1000 rwx-------
+1
+Tash-hads-MacBook-Pro:a1 tash-had$ ls -l
+total 72
+-rw-r--r--@ 1 tash-had  staff   732 19 Jan 00:58 Makefile
+-rwxr-xr-x  1 tash-had  staff  8800  1 Feb 20:21 count_large
+-rw-r--r--  1 tash-had  staff  2498  1 Feb 20:21 count_large.c
+-rw-r--r--  1 tash-had  staff  1780  1 Feb 20:21 count_large.o
+-rw-r--r--  1 tash-had  staff   219 24 Jan 01:35 handout.test
+-rw-r--r--@ 1 tash-had  staff   984 25 Jan 01:11 sin_helpers.c
+-rw-r--r--  1 tash-had  staff   800 25 Jan 03:31 validate_sin.c
+Tash-hads-MacBook-Pro:a1 tash-had$ git add count_large.c
+Tash-hads-MacBook-Pro:a1 tash-had$ ls
+Makefile	count_large.c	handout.test	validate_sin.c
+count_large	count_large.o	sin_helpers.c
+Tash-hads-MacBook-Pro:a1 tash-had$ mkdir test
+Tash-hads-MacBook-Pro:a1 tash-had$ cd test
+Tash-hads-MacBook-Pro:test tash-had$ touch test.txt
+Tash-hads-MacBook-Pro:test tash-had$ vim test.txt
+
+iaasdsaldjaslkdlaksdj
+asdjk;ajsd;ksa
+;djaksjdkasjlfkjalskdj
+asf
+kjlk
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+-- INSERT --
+
